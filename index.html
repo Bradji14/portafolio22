@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Portafolio Web|Brandon</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">¡Hola!</p>
+                <!-- <h2>Mi nombre es <span>Brandon Saldierna Pérez</span> <br>y soy Desarrollador Web</h2> -->
+                <h2>Mi nombre es <span>Brandon Saldierna Pérez</span> <br>y soy <span class="developer"> Desarrollador Web</span></h2>
+
+                <p class="descripcion">Diseño y Desarrollo de Sitios Web Personalizados </p>
+                <!-- <a href="#portfolio">Proyectos</a> -->
+                <a href="#portfolio" class="button">
+                    Proyectos
+                    <div class="button__horizontal"></div>
+                    <div class="button__vertical"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/about.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Me llamo<span>Brandon Saldierna</span> </h2>
+            <p>Soy Desarrollador Web con excelentes habilidades para crear un buen sitio, estoy buscando un puesto donde pueda aplicar mis conocimientos y habilidades para así poder seguir mejorando.
+
+            </p>
+            <p>He trabajado con Frameworks tanto del lado del Backend como del Frontend, tengo conocimientos basicos de la tecnologia MEAN al igual que conocimientos de Bases de Datos SQl y NoSQl. En mis proyectos he usado herramientas de diseño para su
+                posterior aplicacion en los sitios realizados, tales como Figma y Adobe Ilustrator
+            </p>
+            <p>Implementando todo lo mencionado con anterioridad con el fin de ofrecerte un buen Sitio Web, que se adapte a tus gustos y necesidades requeridas
+            </p>
+            <a href="CV.pdf" target="_blank" download="sd">Ver CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Creador de Sitios Web</h4>
+                <p>Uso de lenguajes de programación para el desarrolo de Frontend y Backend, como JS y PHP, conocimiento de Objetos JSON y librerias para los lenguajes y sus ciertos usos </p>
+            </div>
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Bases de Datos</h4>
+                <p>Crear bases de datos de acuerdo a sus requerimientos, de forma limpia y ordenada, hacer las sentencias correctas para dichas Bases de Datos</p>
+            </div>
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <h4>Posicionamiento SEO</h4>
+
+                <p>Implementacion de ciertas tecnicas para poder posicionar su página web en los primeros resultados de google.</p>
+            </div>
+
+        </div>
+
+
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-laptop-code"></i></span>
+                <h4>Alojamiento de Sitios</h4>
+
+                <p>Escoger un buen servicio de Hosting para poder alojar su sitio web, con una url que sea de su agrado.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-palette"></i></span>
+                <h4>Diseñador Web</h4>
+                <p>Maquetar los sitios web, diseñar propuestas en ciertos programas de diseño para su posterior desarrollo.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-wordpress"></i></i></span>
+                <h4>Manejo de CMS</h4>
+                <p>Conocimiento basico de algunos CMS (Sistemas Gestores de Contenido) como WordPress y Joomla, al igual que ciertos plugins de estos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+
+
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Html & Css</p>
+                <span class="porcentaje">95%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+
+
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Javascript</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+
+
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>PHP</p>
+                <span class="porcentaje">75%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="php"></div>
+            </div>
+        </div>
+
+
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Bases de Datos</p>
+                <span class="porcentaje">85%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="bd"></div>
+            </div>
+        </div>
+
+
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>CMS</p>
+                <span class="porcentaje">70%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="ps"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+
+        <div class="fila">
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="">
+                    <img src="img/1.jpg" alt=""></a>
+                <div class="info">
+                    <h4>Evento MouseMove</h4>
+                    <p>Prueba del evento mousemove con JS</p>
+                </div>
+            </div>
+
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="projects/project_1/movies/index.html">
+                    <img src="img/2.jpg" alt=""></a>
+                <div class="info">
+                    <h4>Web de Peliculas</h4>
+                    <p>Diseño de una propuesta de peliculas online en idioma latino</p>
+                </div>
+            </div>
+
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/skills.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/skills.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/skills.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/skills.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad">
+                    <input type="email" required placeholder="Dirección de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Asunto..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="10" rows="5" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>&copy; Brandon Saldierna Pérez|2022</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
